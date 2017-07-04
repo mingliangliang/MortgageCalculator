@@ -1,0 +1,401 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\房贷计算器03.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Calculator.ico"
+IDI_LOGO                ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\badtz-maru_2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\Deery-Lou.ico"
+IDI_YDK                 ICON    DISCARDABLE     "res\\Ducky 02.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\Ducky 03.ico"
+IDI_ICON6               ICON    DISCARDABLE     "res\\star.ico"
+IDI_ICON7               ICON    DISCARDABLE     "res\\Yahoo Messenger.ico"
+IDI_ICON8               ICON    DISCARDABLE     "res\\Calculator alt.ico"
+IDI_ICON10              ICON    DISCARDABLE     "res\\Yahoo Messenger alt.ico"
+IDI_ICON9               ICON    DISCARDABLE     "res\\icon9.ico"
+IDI_XIAOHUI             ICON    DISCARDABLE     "res\\校徽高分辨率.ico"
+IDI_LOGOXX              ICON    DISCARDABLE     "res\\校徽高分辨率~1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 240, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 房贷计算器03"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "房贷计算器旗舰版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,26,119,8
+    DEFPUSHBUTTON   "我知道了",IDOK,165,70,37,14,WS_GROUP
+    ICON            IDI_LOGO,IDC_STATIC,7,13,20,20
+    LTEXT           "本程序计算结果仅供参考，如有疑问请联系我。",IDC_STATIC,
+                    40,42,172,11
+    LTEXT           "明先生：（023）63007777",IDC_STATIC,40,61,93,8
+    ICON            IDI_ICON7,IDC_STATIC,7,52,20,20
+END
+
+IDD_MY03_DIALOG DIALOGEX 0, 0, 614, 277
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "房贷计算器旗舰版"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "退出程序",IDOK,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | WS_TABSTOP,171,259,75,15
+    LTEXT           "贷款类别：",IDC_STATIC2,7,21,65,14
+    LTEXT           "商业型：",IDC_STATIC6,197,78,65,14
+    LTEXT           "公积金：",IDC_STATIC7,197,99,65,14
+    EDITTEXT        IDC_TOTAL2,237,95,40,14,ES_AUTOHSCROLL
+    LTEXT           "万元",IDC_STAT4,285,97,17,8
+    LTEXT           "计算方式：",IDC_STATIC3,7,49,65,14
+    LTEXT           "单价：",IDC_STATIC4,63,75,65,14
+    LTEXT           "面积：",IDC_STATIC5,63,95,65,14
+    LTEXT           "按揭成数：",IDC_STATIC9,63,115,65,14
+    LTEXT           "平米",IDC_STAT2,146,97,17,8
+    LTEXT           "元/平米",IDC_STAT1,146,76,29,8
+    EDITTEXT        IDC_UNITP,93,76,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AREA,94,97,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CSHU,113,116,48,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_TOTAL1,236,77,40,14,ES_AUTOHSCROLL
+    LTEXT           "万元",IDC_STAT3,281,77,17,8
+    LTEXT           "按揭年数：",IDC_STATI,7,143,65,14
+    COMBOBOX        IDC_YEARS,63,143,70,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    LTEXT           "商业贷款利率：",IDC_STATI1,7,173,73,14
+    EDITTEXT        IDC_LILV1,75,173,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STAT5,118,173,12,8
+    LTEXT           "还款方式：",IDC_STATI3,7,201,65,14
+    CONTROL         "等额本金",IDC_METH1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,63,199,48,10
+    CONTROL         "等额本息",IDC_METH2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,146,199,48,10
+    CONTROL         "开始计算",IDC_BEGIN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    56,224,91,27
+    CONTROL         "全部清屏",IDC_RESET,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    167,224,91,27
+    CONTROL         "",IDC_STA,"Static",SS_WHITEFRAME | SS_SUNKEN | NOT 
+                    WS_VISIBLE,329,7,2,267
+    LTEXT           "房款总额：",IDC_STATIC,341,48,46,8
+    LTEXT           "贷款总额：",IDC_STATIC,341,71,46,8
+    LTEXT           "还款总额：",IDC_STATIC,341,94,46,8
+    LTEXT           "支付利息：",IDC_STATIC,341,117,46,8
+    LTEXT           "首期付款：",IDC_STATIC,341,140,46,8
+    LTEXT           "贷款月数：",IDC_STATIC,341,163,46,8
+    LTEXT           "月均还款：",IDC_STATIC,341,186,46,8
+    LTEXT           "房款总额：",IDC_STATIC,475,45,50,8
+    LTEXT           "贷款总额：",IDC_STATIC,475,69,50,8
+    LTEXT           "还款总额：",IDC_STATIC,475,93,50,8
+    LTEXT           "支付利息：",IDC_STATIC,475,117,50,8
+    LTEXT           "首期付款：",IDC_STATIC,475,141,50,8
+    LTEXT           "贷款月数：",IDC_STATIC,475,165,50,8
+    LTEXT           "首月还款：",IDC_STATIC,475,189,50,8
+    EDITTEXT        IDC_REFK1,392,48,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REDK1,392,71,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REHK1,392,94,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REZF1,392,117,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_RESQ1,392,140,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REDKY1,392,163,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REYJ1,392,183,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REFK2,523,45,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REDK2,523,69,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REHK2,523,93,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REZF2,523,117,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_RESQ2,523,141,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REDKY2,523,165,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_REYJ2,523,189,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         "隐藏结果<<",IDC_BUTT,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | WS_TABSTOP,253,259,75,15
+    LTEXT           "万元",IDC_STATIC,436,48,17,8
+    LTEXT           "万元",IDC_STATIC,436,72,17,8
+    LTEXT           "万元",IDC_STATIC,436,96,17,8
+    LTEXT           "万元",IDC_STATIC,436,120,17,8
+    LTEXT           "万元",IDC_STATIC,436,144,17,8
+    LTEXT           "万元",IDC_STATIC,434,188,17,8
+    GROUPBOX        "",IDC_STATIC,59,193,170,25,NOT WS_VISIBLE | WS_GROUP | 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,59,40,254,29,NOT WS_VISIBLE | WS_GROUP
+    CONTROL         "根据面积、单价计算",IDC_DAREA,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,63,49,88,10
+    CONTROL         "根据贷款总额计算",IDC_DTOTAL,"Button",
+                    BS_AUTORADIOBUTTON,187,50,80,10
+    LTEXT           "万元",IDC_STATIC,563,45,17,8
+    LTEXT           "万元",IDC_STATIC,563,70,17,8
+    LTEXT           "万元",IDC_STATIC,563,95,17,8
+    LTEXT           "万元",IDC_STATIC,563,120,17,8
+    LTEXT           "万元",IDC_STATIC,563,145,17,8
+    LTEXT           "万元",IDC_STATIC,564,192,17,8
+    LTEXT           "每月递减：",IDC_STATIC,475,213,50,8
+    EDITTEXT        IDC_REDJ,523,213,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "公积金贷款利率：",IDC_STATIC8,143,173,82,14
+    EDITTEXT        IDC_LILV2,217,173,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STAT6,263,173,8,8
+    LTEXT           "元",IDC_STATIC,565,213,9,8
+    CONTROL         "商业贷款",IDC_LOAN1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,63,23,48,10
+    CONTROL         "公积金贷款",IDC_LOAN2,"Button",BS_AUTORADIOBUTTON,133,
+                    24,56,10
+    CONTROL         "组合贷款",IDC_LOAN3,"Button",BS_AUTORADIOBUTTON,209,24,
+                    48,10
+    GROUPBOX        "",IDC_STATIC1,59,13,224,29,NOT WS_VISIBLE
+    CONTROL         "程序说明",IDC_EXP,"Button",BS_OWNERDRAW | BS_CENTER | 
+                    BS_VCENTER | WS_TABSTOP,89,259,75,15
+    GROUPBOX        "等额本金还款",IDC_LEFTK,337,17,120,218,BS_CENTER | 
+                    BS_FLAT
+    GROUPBOX        "等额本金还款",IDC_RIGHTK,472,17,120,220,BS_CENTER | 
+                    BS_FLAT
+    LTEXT           "常州大学信息科学与技术学院",IDC_WORD,367,243,231,22
+    CONTROL         "打开屏幕键盘",IDC_OPENKEYBORD,"Button",BS_OWNERDRAW | 
+                    BS_CENTER | BS_VCENTER | WS_TABSTOP,7,259,75,15
+    ICON            IDI_LOGOXX,IDC_STATIC,341,244,20,20
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "房贷计算器03 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "房贷计算器03\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "房贷计算器03.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "房贷计算器03 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_MY03_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 607
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MY03_DIALOG DLGINIT
+BEGIN
+    IDC_CSHU, 0x403, 4, 0
+0xb339, 0x00c9, 
+    IDC_CSHU, 0x403, 4, 0
+0xb338, 0x00c9, 
+    IDC_CSHU, 0x403, 4, 0
+0xb337, 0x00c9, 
+    IDC_CSHU, 0x403, 4, 0
+0xb336, 0x00c9, 
+    IDC_CSHU, 0x403, 4, 0
+0xb335, 0x00c9, 
+    IDC_CSHU, 0x403, 4, 0
+0xb334, 0x00c9, 
+    IDC_CSHU, 0x403, 4, 0
+0xb333, 0x00c9, 
+    IDC_CSHU, 0x403, 4, 0
+0xb332, 0x00c9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc431, 0xa3ea, 0x31a8, 0xc632, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc432, 0xa3ea, 0x32a8, 0xc634, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc433, 0xa3ea, 0x33a8, 0xc636, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc434, 0xa3ea, 0x34a8, 0xc638, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc435, 0xa3ea, 0x36a8, 0xc630, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc436, 0xa3ea, 0x37a8, 0xc632, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc437, 0xa3ea, 0x38a8, 0xc634, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 12, 0
+0xc438, 0xa3ea, 0x39a8, 0xc636, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 13, 0
+0xc439, 0xa3ea, 0x31a8, 0x3830, 0xdac6, 0xa9a3, "\000" 
+    IDC_YEARS, 0x403, 14, 0
+0x3031, 0xeac4, 0xa8a3, 0x3231, 0xc630, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3131, 0xeac4, 0xa8a3, 0x3331, 0xc632, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3231, 0xeac4, 0xa8a3, 0x3431, 0xc634, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3331, 0xeac4, 0xa8a3, 0x3531, 0xc636, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3431, 0xeac4, 0xa8a3, 0x3631, 0xc638, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3531, 0xeac4, 0xa8a3, 0x3831, 0xc630, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3631, 0xeac4, 0xa8a3, 0x3931, 0xc632, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3731, 0xeac4, 0xa8a3, 0x3032, 0xc634, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3831, 0xeac4, 0xa8a3, 0x3132, 0xc636, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3931, 0xeac4, 0xa8a3, 0x3232, 0xc638, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3032, 0xeac4, 0xa8a3, 0x3432, 0xc630, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3532, 0xeac4, 0xa8a3, 0x3033, 0xc630, 0xa3da, 0x00a9, 
+    IDC_YEARS, 0x403, 14, 0
+0x3033, 0xeac4, 0xa8a3, 0x3633, 0xc630, 0xa3da, 0x00a9, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 房贷计算器03(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\房贷计算器03.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
